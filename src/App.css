@@ -1,5 +1,17 @@
 .App {
   text-align: center;
+  border: 5px solid red;
+}
+
+li {
+  list-style: none;
+  font-style: italic;
+  border: 1px solid orange;
+}
+
+.component {
+  border: 3px solid skyblue;
+  margin: 20px;
 }
 
 .App-logo {
