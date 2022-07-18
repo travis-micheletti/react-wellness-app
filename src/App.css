@@ -8,6 +8,12 @@ li {
   font-style: italic;
   border: 1px solid orange;
 }
+nav {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  border: 3px solid skyblue;
+}
 
 .component {
   border: 3px solid skyblue;
