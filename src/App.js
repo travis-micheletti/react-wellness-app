@@ -5,19 +5,12 @@ import Home from './components/Home';
 import JokePage from './components/JokePage';
 import RandomPage from './components/RandomPage';
 import StudyPage from './components/StudyPage';
+import NavBar from './components/NavBar';
 
 function App() {
 
   return (
     <div className="App">
-      <nav> 
-        <Link to='/'>Home</Link>
-        <Link to='/eat'>Consume</Link>
-        <Link to='/study'>Study</Link>
-        <Link to='/joke'>Laugh</Link>
-        <Link to='/b/'>Learn</Link>
-      
-      </nav>
       <Routes>
         <Route path='/eat' element={<EatPage />} />
         <Route path='/study' element={<StudyPage />} />
@@ -25,6 +18,7 @@ function App() {
         <Route path='/b/' element={<RandomPage />} />
         <Route path='/' element={<Home />} />
       </Routes>
+      <NavBar />
     </div>
   );
 }
