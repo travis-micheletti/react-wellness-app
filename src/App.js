@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Link, Route, Routes } from 'react-router-dom'
 import EatPage from './components/EatPage';
@@ -10,20 +9,26 @@ import Welcome from './components/Welcome';
 import Nav from './components/Nav';
 
 function App() {
+
+  const searchOptions = {
+    id: process.env.app_id,
+    key: process.env.app_key
+  }
+
   return (
     <div className="App">
       <nav> 
         <Link to='/home'>Home</Link>
         <Link to='/'>Welcome</Link>
-        <Link to='/eat'>Eat</Link>
+        <Link to='/eat'>Consume</Link>
         <Link to='/study'>Study</Link>
-        <Link to='/joke'>Joke</Link>
-        <Link to='/b/'>Random</Link>
+        <Link to='/joke'>Laugh</Link>
+        <Link to='/b/'>Learn</Link>
       
       </nav>
       <Routes>
         <Route path='/home' element={<Home />} />
-        <Route path='/eat' element={<EatPage />} />
+        <Route path='/eat' element={<EatPage searchOptions={searchOptions} />} />
         <Route path='/study' element={<StudyPage />} />
         <Route path='/joke' element={<JokePage />} />
         <Route path='/b/' element={<RandomPage />} />

@@ -17,8 +17,8 @@ function RandomPage () {
 
     return (
         <div className='component'>
-            <h1>RandomPage component</h1>
-            <button onClick={getFact}>Get a Random Fact!</button>
+            <h1>Learn a random fact!</h1>
+            <button onClick={getFact}>Random Fact</button>
             <h4>{fact}</h4>
         </div>
     )
