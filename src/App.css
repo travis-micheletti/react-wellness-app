@@ -3,6 +3,11 @@
   border: 5px solid red;
 }
 
+.mainLogo {
+  height: 40vh;
+  width: auto;
+}
+
 li {
   list-style: none;
   font-style: italic;
