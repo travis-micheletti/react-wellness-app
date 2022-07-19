@@ -1,26 +1,28 @@
 import { Link } from 'react-router-dom'
+import styled from 'styled-components'
+
+const ListItem = styled.li`
+  background: white;
+  border-radius: 3px;
+  border: none;
+  color: black;
+`
+
+const HomeItem = styled(ListItem)`
+    background: rgba(0, 255, 255, 0.798);
+    color: white;
+`
 
 function NavBar () {
     return (
-        <nav> 
-        <ul>
-          <li>
-          <Link to='/'>Home</Link>
-          </li>
-          <li>
-          <Link to='/eat'>Consume</Link>
-          </li>
-          <li>
-          <Link to='/study'>Study</Link>
-          </li>
-          <li>
-          <Link to='/joke'>Laugh</Link>
-          </li>
-          <li>
-          <Link to='/b/'>Learn</Link>
-          </li>
+        <ul className='nav'>
+            <Link to='/'><HomeItem>Home</HomeItem></Link>
+            <Link to='/eat'><ListItem>Consume</ListItem></Link>
+            <Link to='/study'><ListItem>Study</ListItem></Link>
+            <Link to='/joke'><ListItem>Laugh</ListItem></Link>
+            <Link to='/b/'><ListItem>Learn</ListItem></Link>
         </ul>
-      </nav>
+    
     )
 }
 
