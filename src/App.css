@@ -12,7 +12,8 @@ iframe {
   display: flex;
   align-self: center;
   max-width: 80vw;
-  border: 2px solid red;
+  border: 20px solid #95E1FF;
+  border-radius: 100px;
 }
 body {
   margin: 0;
