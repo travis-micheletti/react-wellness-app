@@ -1,5 +1,5 @@
 import './App.css';
-import { Link, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import EatPage from './components/EatPage';
 import Home from './components/Home';
 import JokePage from './components/JokePage';

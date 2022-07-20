@@ -6,6 +6,8 @@ const ListItem = styled.li`
   border-radius: 5px;
   border: none;
   color: #9DE9FF;
+  padding-left: 1vw;
+  padding-right: 1vw;
 `
 
 const HomeItem = styled(ListItem)`
