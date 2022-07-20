@@ -73,7 +73,6 @@ function EatPage () {
         .then(res => res.json())
         .then(res => {
             setRecipes(res.hits)
-            console.log(res.hits)
         })
     }
 
