@@ -51,6 +51,7 @@
     - cd into react-wellness-app
     - type code. into terminal and hit enter/return
 
+    
 ## Contribution Guidelines
 - If you have suggestions or if something is bothering you about the app and you want it to change, feel free to submit issue requests via GitHub
 - If you're working on the app and have code you feel is worthy of merging:
