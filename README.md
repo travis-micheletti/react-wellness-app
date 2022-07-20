@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# React Wellness App Documentation
+### [Deployed Website](https://react-wellness-app.netlify.app/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Initial Wireframes
+![image](https://user-images.githubusercontent.com/106038655/180060933-f5029748-a701-4e37-89e6-a65949bac1a3.png)
+![image](https://user-images.githubusercontent.com/106038655/180060982-b0beba3c-2042-42db-bc1c-16bb88705f64.png)
+![image](https://user-images.githubusercontent.com/106038655/180061001-4e33f5af-f5ae-4d80-80a0-081e8f84b802.png)
 
-## Available Scripts
+## Live App Pictures
 
-In the project directory, you can run:
 
-### `npm start`
+## What and Why?
+  - I wanted to make an application that I would actually use for the foreseeable future. I wanted something that was geared towards things that were important to me or things I loved doing. I love laughing, learning, eating, and the Lofi Girl youtube channel!
+  - I wanted to accomplish this while also showcasing what I've learned in class the last few weeks.
+  - I decided to hit on several topics with this app, but originally had wanted to focus on something for healthy recipes/cooking.
+  - After some thought I wanted to expand and have further elements to the page that would be immediately satisfying but I could also work on over time tos how my growth as a developer.
+  - With these, I made separate components for navigating around the app but also for the main content: food, jokes, facts, and music
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
+  - React.js
+    - React Router Dom
+    - Styled Components
+    - Browser Router
+    - Links
+    - Routes
+    - useState
+  - HTML
+  - CSS
+  - Flexbox
+  - JavaScript
+  - JSX
+  - Netlify
+  - Git
+  - Github
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started/Install
+- To view:
+> [Deployed App - Click](https://react-wellness-app.netlify.app/)
+- To edit:
+    - Fork this repository
+    - Hit green "Code" dropdown above repo files
+    - Open a terminal
+    - Change directory(cd) to where you'd like to place repo in your local machine
+    - type 'git clone [paste clone SSH link]' and press enter/return
+    - Change directory into the react-wellness-app
+    - type code . into terminal and hit enter/return
+- To attempt fresh build:
+    - Change directory(cd) to where you'd like to place repo in your local machine
+    - type 'npx create-react-app react-wellness-app' and press enter/return
+    - after app is built, cmd/ctrl + t in terminal to open new terminal window
+    - cd into react-wellness-app
+    - type code. into terminal and hit enter/return
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contribution Guidelines
+- If you have suggestions or if something is bothering you about the app and you want it to change, feel free to submit issue requests via GitHub
+- If you're working on the app and have code you feel is worthy of merging:
+    - Create a pull request from your forked repo to main repo
+    - With your forked request, please include detailed comments as to what changes you made, why, and screenshots showing the changes being implemented
+   
