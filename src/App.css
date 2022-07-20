@@ -1,8 +1,10 @@
 * {
   /* box-sizing: border-box; */
   text-decoration: none;
-  color: white;
-  background-color: rgb(0, 4, 4);
+  color: rgb(71, 78, 82);
+  background-color: rgb(184, 211, 211);
+  font-family: 'Edu SA Beginner', cursive;
+  font-size: 24px;
 }
 
 
@@ -19,8 +21,11 @@ li {
 .nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  /* border: 3px solid black; */
+  justify-content: space-evenly;
+  margin-left: -6vw;
+  column-gap: 1vw;
+  /* border: 3px solid rgb(3, 224, 224); */
+  
 }
 
 
@@ -38,16 +43,23 @@ li {
 .App {
   text-align: center;
   /* border: 5px solid red; */
+  height: 100vh;
+  width: auto;
   
 }
 
 .mainLogo {
   display: flex;
-  border: solid white 5px;
-  height: 40vh;
+  border: solid rgb(71, 78, 82) 5px;
+  height: 35vh;
   width: auto;
-  background-color: rgba(0, 255, 255, 0.798);
+  background-color: rgba(54, 70, 72, 0.798);
   border-radius: 50px;
+}
+
+.header {
+  font-family: 'Rubik Moonrocks', cursive;
+  font-size: 50px;
 }
 
 /* #homeNav {
@@ -60,7 +72,8 @@ li {
 .nav li {
   list-style: none;
   /* border: 1px solid orange; */
-  background-color: solid white;
+  /* background-color: solid black; */
+  font-size: 26px;
   }
 /* .nav li:hover{
   font-size: x-large;

@@ -2,15 +2,15 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const ListItem = styled.li`
-  background: white;
-  border-radius: 3px;
+  background: #4e5152;
+  border-radius: 5px;
   border: none;
-  color: black;
+  color: #ebf2f5;
 `
 
 const HomeItem = styled(ListItem)`
     background: rgba(0, 255, 255, 0.798);
-    color: white;
+    color: black;
 `
 
 function NavBar () {

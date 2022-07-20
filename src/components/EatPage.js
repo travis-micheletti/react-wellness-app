@@ -1,5 +1,13 @@
 import { useState, useEffect } from 'react'
 import searchOptions from '../App'
+import styled from 'styled-components'
+
+const EatHeader = styled.h1`
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 50px;
+    text-shadow: 3px 3px 3px white;
+    box-shadow: 1px 1px 10px black;
+`
 
 function EatPage () {
     const initialState = {
@@ -42,7 +50,7 @@ function EatPage () {
     return (
 
         <div className='component'>
-            <h3>EatPage component</h3>
+            <EatHeader>What to eat?</EatHeader>
             <form onSubmit={handleSubmit} >
                 <label htmlFor='foodSearch'>Recipe Lookup</label>
                 <input placeholder='Search' type='text' name='searchString' required onChange={handleChange} value={searchString}/>

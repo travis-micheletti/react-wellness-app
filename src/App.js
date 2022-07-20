@@ -11,6 +11,7 @@ function App() {
 
   return (
     <div className="App">
+      <NavBar />
       <Routes>
         <Route path='/eat' element={<EatPage />} />
         <Route path='/study' element={<StudyPage />} />
@@ -18,7 +19,7 @@ function App() {
         <Route path='/b/' element={<RandomPage />} />
         <Route path='/' element={<Home />} />
       </Routes>
-      <NavBar />
+      
     </div>
   );
 }
