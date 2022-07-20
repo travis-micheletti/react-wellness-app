@@ -5,8 +5,9 @@ import styled from 'styled-components'
 const EatHeader = styled.h1`
     font-family: 'Nunito Sans', sans-serif;
     font-size: 50px;
-    text-shadow: 3px 3px 3px white;
-    box-shadow: 1px 1px 10px black;
+    text-shadow: 3px 3px 3px #89D6FF;
+    box-shadow: 1px 1px 14px #374955;
+    margin-top: -30vh;
 `
 
 function EatPage () {

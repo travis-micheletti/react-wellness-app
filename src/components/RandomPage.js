@@ -1,5 +1,25 @@
 import { useState } from 'react'
+import styled from 'styled-components'
+    
+    const RandomHeader = styled.h1`
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 50px;
+    text-shadow: 3px 3px 3px #89D6FF;
+    box-shadow: 1px 1px 14px #374955;
+    margin-top: -30vh;
+    `
 
+    const FactButton = styled.button`
+    width: 40vw;
+    align-self: center;
+    font-size: 30px;
+    background: #212e42;
+    color: rgb(184, 211, 211);
+    border: solid white 10px;
+    border-radius: 100px;
+    box-shadow: 5px 5px 15px black;
+    cursor: pointer;
+    `
 function RandomPage () {
     const [fact, setFact] = useState([])
 
@@ -17,8 +37,8 @@ function RandomPage () {
 
     return (
         <div className='component'>
-            <h1>Learn a random fact!</h1>
-            <button onClick={getFact}>Random Fact</button>
+            <RandomHeader>Random Facts</RandomHeader>
+            <FactButton onClick={getFact}>Get Fact!</FactButton>
             <h4>{fact}</h4>
         </div>
     )

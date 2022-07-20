@@ -5,11 +5,12 @@ import styled from 'styled-components'
 const PageHeader = styled.h1`
     font-family: 'Nunito Sans', sans-serif;
     font-size: 50px;
-    text-shadow: 3px 3px 3px white;
-    box-shadow: 1px 1px 10px black
+    text-shadow: 3px 3px 3px #89D6FF;
+    box-shadow: 1px 1px 14px #374955;
+    margin-top: -30vh;
 `
 
-const Button = styled.button`
+ export const Button = styled.button`
     width: 40vw;
     align-self: center;
     font-size: 30px;
@@ -18,6 +19,7 @@ const Button = styled.button`
     border: solid white 10px;
     border-radius: 100px;
     box-shadow: 5px 5px 15px black;
+    cursor: pointer;
 `
 
 function JokePage () {

@@ -2,15 +2,15 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const ListItem = styled.li`
-  background: #4e5152;
+  background: #004C73;
   border-radius: 5px;
   border: none;
-  color: #ebf2f5;
+  color: #9DE9FF;
 `
 
 const HomeItem = styled(ListItem)`
-    background: rgba(0, 255, 255, 0.798);
-    color: black;
+    background: #9DE9FF;
+    color: #004C73;
 `
 
 function NavBar () {
@@ -18,9 +18,9 @@ function NavBar () {
         <ul className='nav'>
             <Link to='/'><HomeItem>Home</HomeItem></Link>
             <Link to='/eat'><ListItem>Consume</ListItem></Link>
-            <Link to='/study'><ListItem>Study</ListItem></Link>
             <Link to='/joke'><ListItem>Laugh</ListItem></Link>
             <Link to='/b/'><ListItem>Learn</ListItem></Link>
+            <Link to='/study'><ListItem>Study</ListItem></Link>
         </ul>
     
     )
