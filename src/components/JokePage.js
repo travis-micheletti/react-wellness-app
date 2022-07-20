@@ -3,6 +3,7 @@ import { useState } from 'react'
 import styled from 'styled-components'
 
 const PageHeader = styled.h1`
+    color: #004C73;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 50px;
     text-shadow: 3px 3px 3px #89D6FF;
@@ -20,6 +21,11 @@ const PageHeader = styled.h1`
     border-radius: 100px;
     box-shadow: 5px 5px 15px black;
     cursor: pointer;
+`
+
+const Punchline = styled.h3`
+    font-size: 40px;
+    max-height: 30vh;
 `
 
 function JokePage () {
@@ -41,7 +47,7 @@ function JokePage () {
         <div className='component'>
             <PageHeader>Click to laugh!</PageHeader>
             <Button onClick={getJoke}>Get Joke</Button>
-            <h4>{joke}</h4>
+            <Punchline>{joke}</Punchline>
         </div>
     )
 }

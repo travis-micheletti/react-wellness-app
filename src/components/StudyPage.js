@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 const StudyHeader = styled.h1`
+    color: #004C73;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 50px;
     text-shadow: 3px 3px 3px #89D6FF;
@@ -14,7 +15,7 @@ function StudyPage () {
             <StudyHeader>Study in Peace</StudyHeader>
             <iframe 
             width="auto" 
-            height="400" 
+            height="200" 
             src="https://www.youtube.com/embed/jfKfPfyJRdk" 
             title="YouTube video player" 
             frameborder="0" 

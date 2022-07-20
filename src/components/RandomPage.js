@@ -2,6 +2,7 @@ import { useState } from 'react'
 import styled from 'styled-components'
     
     const RandomHeader = styled.h1`
+    color: #004C73;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 50px;
     text-shadow: 3px 3px 3px #89D6FF;

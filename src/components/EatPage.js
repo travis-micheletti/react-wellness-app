@@ -1,13 +1,35 @@
 import { useState, useEffect } from 'react'
-import searchOptions from '../App'
 import styled from 'styled-components'
 
 const EatHeader = styled.h1`
+    color: #004C73;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 50px;
     text-shadow: 3px 3px 3px #89D6FF;
     box-shadow: 1px 1px 14px #374955;
     margin-top: -30vh;
+`
+
+const FindButton = styled.button`
+    background-color: #212e42;
+`
+
+const RecipeText = styled.a`
+    font-size: 22px;
+    text-align: center;
+    cursor: pointer;
+    /* white-space: nowrap; */
+`
+
+const RecipeImage = styled.img`
+    max-height: 5vh;
+    width: auto;
+    align-content: center;
+    /* white-space: nowrap; */
+`
+
+const RecipeInput = styled.input`
+    color: #212e42;
 `
 
 function EatPage () {
@@ -54,15 +76,15 @@ function EatPage () {
             <EatHeader>What to eat?</EatHeader>
             <form onSubmit={handleSubmit} >
                 <label htmlFor='foodSearch'>Recipe Lookup</label>
-                <input placeholder='Search' type='text' name='searchString' required onChange={handleChange} value={searchString}/>
-                <button type='submit'>Find!</button>
+                <RecipeInput placeholder='Search' type='text' name='searchString' required onChange={handleChange} value={searchString}/>
+                <FindButton type='submit'>Find!</FindButton>
             </form>
             <div className="gallery">
                 {recipes.map(recipe => (
-                <div key={recipe.recipe.label} className="gif">
-                    <img src={recipe.recipe.images.THUMBNAIL.url} alt={recipe.recipe.label} />
+                <div key={recipe.recipe.label} className="recipes">
+                    <RecipeImage src={recipe.recipe.images.THUMBNAIL.url} alt={recipe.recipe.label} />
                     <span>
-                    <a href={recipe.recipe.url}>{recipe.recipe.label}</a>
+                    <RecipeText target='_blank' href={recipe.recipe.url}>{recipe.recipe.label}</RecipeText>
                     </span>
                     
                 </div>

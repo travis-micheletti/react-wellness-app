@@ -1,14 +1,18 @@
 * {
   /* box-sizing: border-box; */
   text-decoration: none;
-  color: #004C73;
+  color: #97E4FF;
   /* background-color: rgb(184, 211, 211); */
   
   font-family: 'Teko', sans-serif;
   font-size: 24px;
 }
 
-
+iframe {
+  display: flex;
+  align-self: center;
+  max-width: 80vw;
+}
 body {
   margin: 0;
   text-decoration: none;
@@ -30,7 +34,14 @@ li {
   
 }
 
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .gallery {
+ 
   max-height: 60vh;
   margin-top: 5vh;
 }
