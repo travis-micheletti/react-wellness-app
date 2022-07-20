@@ -12,6 +12,7 @@ iframe {
   display: flex;
   align-self: center;
   max-width: 80vw;
+  border: 2px solid red;
 }
 body {
   margin: 0;
@@ -61,8 +62,6 @@ li {
   /* border: 5px solid red; */
   height: 100vh;
   width: auto;
-  
-  
 }
 
 .mainLogo {
@@ -71,12 +70,9 @@ li {
   justify-content: center;
   margin-top: -5vh;
   margin-bottom: 5vh;
-  /* border: solid rgb(71, 78, 82) 5px; */
   height: 40vh;
   width: auto;
   max-width: 800px;
-  /* background-color: rgba(54, 70, 72, 0.798); */
-  /* background-image: linear-gradient(to bottom, #f4f6fa, #d3f1ff, #9ff1ff, #5cf0f9, #0cedd4); */
   border-radius: 50px;
 }
 
@@ -104,4 +100,31 @@ li {
   transition-duration: 500ms;
   transition-delay: 100ms;
 } */
+
+@media only screen and (min-width: 768px) {
+  * {
+    font-size: 32px;
+  }
+  
+  .recipes {
+    text-align: center;
+  }
+
+  .header {
+    font-size: 65px;
+  }
+
+  .nav li:hover{
+  background: #9DE9FF;
+  color: #004C73;
+  transition-duration: 500ms;
+  transition-delay: 100ms;
+}
+
+  iframe {
+    height: 50vh;
+    width: 60vw;
+    max-width: 700px;
+  }
+}
 

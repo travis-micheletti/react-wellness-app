@@ -13,7 +13,7 @@ function StudyPage () {
     return (
         <div className='component'>
             <StudyHeader>Study in Peace</StudyHeader>
-            <iframe 
+            <iframe className='studyVideo'
             width="auto" 
             height="200" 
             src="https://www.youtube.com/embed/jfKfPfyJRdk" 

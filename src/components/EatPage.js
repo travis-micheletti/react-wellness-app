@@ -18,20 +18,37 @@ const RecipeText = styled.a`
     font-size: 22px;
     text-align: center;
     cursor: pointer;
-    /* white-space: nowrap; */
+    @media only screen and (min-width: 768px) {
+    font-size: 40px;
+    &:hover {
+        color: #212e42;
+        transition-duration: 500ms;
+        transition-delay: 100ms;
+    }
+    }
 `
 
 const RecipeImage = styled.img`
     max-height: 5vh;
     width: auto;
     align-content: center;
+    @media only screen and (min-width: 768px) {
+    max-height: 10vh;
+    margin-bottom: 1vh;
+    }
     /* white-space: nowrap; */
 `
 
 const RecipeInput = styled.input`
     color: #212e42;
 `
-
+const RecipeInfo = styled.span`
+    display: inline-block;
+    align-items: center;
+@media only screen and (max-width: 600px) {
+    display: none;
+}
+`
 function EatPage () {
     const initialState = {
         search: ''
@@ -40,6 +57,7 @@ function EatPage () {
         id: process.env.REACT_APP_app_id,
         key: process.env.REACT_APP_app_key
       }
+      
     const [formState, setFormState] = useState(initialState)
     const [searchString, setSearchString] = useState('')
     const [recipes, setRecipes] = useState([])
@@ -82,11 +100,9 @@ function EatPage () {
             <div className="gallery">
                 {recipes.map(recipe => (
                 <div key={recipe.recipe.label} className="recipes">
-                    <RecipeImage src={recipe.recipe.images.THUMBNAIL.url} alt={recipe.recipe.label} />
-                    <span>
+                    <RecipeImage className='recipe-picture' src={recipe.recipe.images.THUMBNAIL.url} alt={recipe.recipe.label} />
+                    <RecipeInfo>Meal Type: {recipe.recipe.mealType}  ({recipe.recipe.dietLabels})</RecipeInfo>
                     <RecipeText target='_blank' href={recipe.recipe.url}>{recipe.recipe.label}</RecipeText>
-                    </span>
-                    
                 </div>
                 ))}
             </div>

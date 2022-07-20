@@ -21,6 +21,12 @@ import styled from 'styled-components'
     box-shadow: 5px 5px 15px black;
     cursor: pointer;
     `
+
+    const NewFact = styled.h3`
+    font-size: 40px;
+    max-height: 30vh;
+    color: #212e42;
+    `
 function RandomPage () {
     const [fact, setFact] = useState([])
 
@@ -40,7 +46,7 @@ function RandomPage () {
         <div className='component'>
             <RandomHeader>Random Facts</RandomHeader>
             <FactButton onClick={getFact}>Get Fact!</FactButton>
-            <h4>{fact}</h4>
+            <NewFact>{fact}</NewFact>
         </div>
     )
 }

@@ -10,15 +10,12 @@ const ListItem = styled.li`
   padding-right: 1vw;
 `
 
-const HomeItem = styled(ListItem)`
-    background: #9DE9FF;
-    color: #004C73;
-`
+
 
 function NavBar () {
     return (
         <ul className='nav'>
-            <Link to='/'><HomeItem>Home</HomeItem></Link>
+            <Link to='/'><ListItem>Home</ListItem></Link>
             <Link to='/eat'><ListItem>Consume</ListItem></Link>
             <Link to='/joke'><ListItem>Laugh</ListItem></Link>
             <Link to='/b/'><ListItem>Learn</ListItem></Link>

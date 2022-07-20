@@ -26,6 +26,7 @@ const PageHeader = styled.h1`
 const Punchline = styled.h3`
     font-size: 40px;
     max-height: 30vh;
+    color: #212e42;
 `
 
 function JokePage () {

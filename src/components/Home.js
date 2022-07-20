@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const PageHeader = styled.h1`
-color: #9DE9FF;
+color: ##004C73;
 `
 
 function Home () {
