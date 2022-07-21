@@ -23,10 +23,12 @@ const PageHeader = styled.h1`
     cursor: pointer;
 `
 
-const Punchline = styled.h3`
+const Punchline = styled.h5`
     font-size: 40px;
     max-height: 30vh;
     color: #212e42;
+    transition-duration: 500ms;
+    transition-delay: 100ms;
 `
 
 function JokePage () {

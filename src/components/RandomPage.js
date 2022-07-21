@@ -22,7 +22,7 @@ import styled from 'styled-components'
     cursor: pointer;
     `
 
-    const NewFact = styled.h3`
+    const NewFact = styled.h5`
     font-size: 40px;
     max-height: 30vh;
     color: #212e42;

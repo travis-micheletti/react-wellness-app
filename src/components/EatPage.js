@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import styled from 'styled-components'
+import LogoPic from './Home'
 
 const EatHeader = styled.h1`
     color: #004C73;
@@ -8,6 +9,10 @@ const EatHeader = styled.h1`
     text-shadow: 3px 3px 3px #89D6FF;
     box-shadow: 1px 1px 14px #374955;
     margin-top: -30vh;
+`
+
+export const SmallLogo = styled(LogoPic)`
+    height: 100px;
 `
 
 const FindButton = styled.button`
@@ -43,6 +48,7 @@ const RecipeInput = styled.input`
     color: #212e42;
 `
 const RecipeInfo = styled.span`
+    color: #004C73;
     display: inline-block;
     align-items: center;
 @media only screen and (max-width: 600px) {
@@ -73,6 +79,7 @@ function EatPage () {
         .then(res => res.json())
         .then(res => {
             setRecipes(res.hits)
+            
         })
     }
 
@@ -86,7 +93,7 @@ function EatPage () {
         setFormState(initialState)
         getRecipes(searchString)
     }
-
+    
     return (
 
         <div className='component'>
@@ -100,7 +107,7 @@ function EatPage () {
                 {recipes.map(recipe => (
                 <div key={recipe.recipe.label} className="recipes">
                     <RecipeImage className='recipe-picture' src={recipe.recipe.images.THUMBNAIL.url} alt={recipe.recipe.label} />
-                    <RecipeInfo>Meal Type: {recipe.recipe.mealType}  ({recipe.recipe.dietLabels})</RecipeInfo>
+                    <RecipeInfo>Meal Type: {recipe.recipe.mealType} - | - Total Calories: {Math.floor(recipe.recipe.calories)}</RecipeInfo>
                     <RecipeText target='_blank' href={recipe.recipe.url}>{recipe.recipe.label}</RecipeText>
                 </div>
                 ))}
