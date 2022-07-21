@@ -20,11 +20,17 @@ const FindButton = styled.button`
 `
 
 const RecipeText = styled.a`
+    flex-wrap: wrap;
+    width: 30vw;
     font-size: 22px;
     text-align: center;
+    margin-right: 10vw;
     cursor: pointer;
+    overflow-x: auto;
+    overflow-y: auto;
     @media only screen and (min-width: 768px) {
     font-size: 40px;
+    
     &:hover {
         color: #212e42;
         transition-duration: 500ms;
@@ -37,9 +43,10 @@ const RecipeImage = styled.img`
     max-height: 5vh;
     width: auto;
     align-content: center;
+    margin-bottom: 1vh;
     @media only screen and (min-width: 768px) {
     max-height: 10vh;
-    margin-bottom: 1vh;
+    
     }
     /* white-space: nowrap; */
 `
@@ -47,10 +54,13 @@ const RecipeImage = styled.img`
 const RecipeInput = styled.input`
     color: #212e42;
 `
-const RecipeInfo = styled.span`
+const RecipeInfo = styled.div`
+    font-size: 22px;
+    text-align-last: left;
+    margin-right: 20vw;
     color: #004C73;
-    display: inline-block;
-    align-items: center;
+    overflow-x: auto;
+    overflow-y: auto;
 @media only screen and (max-width: 600px) {
     display: none;
 }
@@ -68,9 +78,9 @@ function EatPage () {
     const [searchString, setSearchString] = useState('')
     const [recipes, setRecipes] = useState([])
 
-    // useEffect(() => {
-    //     getRecipes(searchString)
-    // }, [])
+    useEffect(() => {
+        getRecipes(searchString)
+    }, [])
 
     function getRecipes(searchString) {
         const url = `https://api.edamam.com/api/recipes/v2?type=public&q=${searchString}&app_id=${searchOptions.id}&app_key=${searchOptions.key}&calories=300-600&imageSize=REGULAR&random=true&field=label&field=images&field=url&field=dietLabels&field=healthLabels&field=calories&field=mealType&field=dishType&field=tags`
@@ -79,7 +89,6 @@ function EatPage () {
         .then(res => res.json())
         .then(res => {
             setRecipes(res.hits)
-            
         })
     }
 
@@ -89,11 +98,25 @@ function EatPage () {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        console.log(formState)
         setFormState(initialState)
         getRecipes(searchString)
     }
-    
+    if (recipes.length < 1) {
+        return(
+            <div className='component'>
+            <EatHeader>What to eat?</EatHeader>
+            <form onSubmit={handleSubmit} >
+                <label htmlFor='foodSearch'>Recipe Lookup</label>
+                <RecipeInput placeholder='Search' type='text' name='searchString' required onChange={handleChange} value={searchString}/>
+                <FindButton type='submit'>Find!</FindButton>
+            </form>
+            <div className="gallery">
+                No recipes found! Try again! 
+            </div>
+            
+        </div>
+        )
+    }
     return (
 
         <div className='component'>

@@ -37,15 +37,23 @@ li {
 }
 
 .recipes {
+
+  width: 100vw;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  border-bottom: 1px solid black;
+  margin-bottom: 1vh;
 }
 
 .gallery {
- 
+  display: flex;
+  flex-direction: column;
+  /* border: 3px solid red; */
   max-height: 60vh;
   margin-top: 5vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .component {
@@ -102,6 +110,8 @@ li {
   transition-delay: 100ms;
 } */
 
+
+
 @media only screen and (min-width: 768px) {
   * {
     font-size: 32px;
@@ -122,12 +132,18 @@ li {
   transition-delay: 100ms;
 }
 
+i:hover {
+  color: #004C73;
+  transition-duration: 500ms;
+  transition-delay: 100ms;
+}
+
   iframe {
     height: 50vh;
     width: 60vw;
     max-width: 700px;
-    border: 20px solid #95E1FF;
-    border-radius: 100px;
+    border: 10px solid #95E1FF;
+    border-radius: 50px;
   }
 }
 

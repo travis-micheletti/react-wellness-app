@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-const ListItem = styled.li`
+export const ListItem = styled.li`
   background: #004C73;
   border-radius: 5px;
   border: none;
   color: #9DE9FF;
   padding-left: 1vw;
   padding-right: 1vw;
+  padding-top: 1vh;
 `
 
 
@@ -15,11 +16,11 @@ const ListItem = styled.li`
 function NavBar () {
     return (
         <ul className='nav'>
-            <Link to='/'><ListItem>Home</ListItem></Link>
-            <Link to='/eat'><ListItem>Consume</ListItem></Link>
-            <Link to='/joke'><ListItem>Laugh</ListItem></Link>
-            <Link to='/b/'><ListItem>Learn</ListItem></Link>
-            <Link to='/study'><ListItem>Study</ListItem></Link>
+            <Link to='/'><ListItem><i className="fa-solid fa-house"></i></ListItem></Link>
+            <Link to='/eat'><ListItem><i className="fa-solid fa-pizza-slice"></i></ListItem></Link>
+            <Link to='/joke'><ListItem><i className="fa-solid fa-face-grin-tears"></i></ListItem></Link>
+            <Link to='/b/'><ListItem><i className="fa-solid fa-graduation-cap"></i></ListItem></Link>
+            <Link to='/study'><ListItem><i className="fa-solid fa-headphones"></i></ListItem></Link>
         </ul>
     
     )
