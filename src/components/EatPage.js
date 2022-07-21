@@ -61,8 +61,11 @@ const RecipeInfo = styled.div`
     color: #004C73;
     overflow-x: auto;
     overflow-y: auto;
-@media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
     display: none;
+    }
+    @media only screen and (min-width: 768px) {
+    font-size: 30px;
 }
 `
 function EatPage () {
