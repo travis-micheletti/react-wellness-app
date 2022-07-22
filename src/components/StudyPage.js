@@ -6,7 +6,7 @@ const StudyHeader = styled.h1`
     font-size: 50px;
     text-shadow: 3px 3px 3px #89D6FF;
     box-shadow: 1px 1px 14px #374955;
-    margin-top: -20vh;
+    margin-top: -10vh;
 `
 
 function StudyPage () {
