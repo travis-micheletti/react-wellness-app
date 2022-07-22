@@ -4,11 +4,11 @@ import LogoPic from './Home'
 
 const EatHeader = styled.h1`
     color: #004C73;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: 'Lobster', cursive;
     font-size: 50px;
     text-shadow: 3px 3px 3px #89D6FF;
     box-shadow: 1px 1px 14px #374955;
-    margin-top: -30vh;
+    /* margin-top: -10vh; */
 `
 
 export const SmallLogo = styled(LogoPic)`
@@ -107,7 +107,7 @@ function EatPage () {
     if (recipes.length < 1) {
         return(
             <div className='component'>
-            <EatHeader>What to eat?</EatHeader>
+            <EatHeader>Recipe Finder</EatHeader>
             <form onSubmit={handleSubmit} >
                 <label htmlFor='foodSearch'>Recipe Lookup</label>
                 <RecipeInput placeholder='Search' type='text' name='searchString' required onChange={handleChange} value={searchString}/>
@@ -123,9 +123,9 @@ function EatPage () {
     return (
 
         <div className='component'>
-            <EatHeader>What to eat?</EatHeader>
+            <EatHeader>Recipe Finder</EatHeader>
             <form onSubmit={handleSubmit} >
-                <label htmlFor='foodSearch'>Recipe Lookup</label>
+                <label htmlFor='foodSearch'>Food Type: </label>
                 <RecipeInput placeholder='Search' type='text' name='searchString' required onChange={handleChange} value={searchString}/>
                 <FindButton type='submit'>Find!</FindButton>
             </form>

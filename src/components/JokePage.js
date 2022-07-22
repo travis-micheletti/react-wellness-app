@@ -4,11 +4,12 @@ import styled from 'styled-components'
 
 const PageHeader = styled.h1`
     color: #004C73;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Lobster', cursive;
     font-size: 50px;
     text-shadow: 3px 3px 3px #89D6FF;
     box-shadow: 1px 1px 14px #374955;
-    margin-top: -30vh;
+    margin-top: -15vh;
+  
 `
 
  export const Button = styled.button`
@@ -25,10 +26,12 @@ const PageHeader = styled.h1`
 
 const Punchline = styled.h5`
     font-size: 40px;
-    max-height: 30vh;
+    max-height: 25vh;
     color: #212e42;
     transition-duration: 500ms;
     transition-delay: 100ms;
+    overflow-x: hidden;
+    overflow-y: auto;
 `
 
 function JokePage () {
@@ -48,8 +51,8 @@ function JokePage () {
 
     return (
         <div className='component'>
-            <PageHeader>Click to laugh!</PageHeader>
-            <Button onClick={getJoke}>Get Joke</Button>
+            <PageHeader>Need a laugh?</PageHeader>
+            <Button onClick={getJoke}>Laugh!</Button>
             <Punchline>{joke}</Punchline>
         </div>
     )

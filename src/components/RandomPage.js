@@ -3,11 +3,11 @@ import styled from 'styled-components'
     
     const RandomHeader = styled.h1`
     color: #004C73;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Lobster', cursive;
     font-size: 50px;
     text-shadow: 3px 3px 3px #89D6FF;
     box-shadow: 1px 1px 14px #374955;
-    margin-top: -30vh;
+    margin-top: -15vh;
     `
 
     const FactButton = styled.button`
@@ -24,8 +24,10 @@ import styled from 'styled-components'
 
     const NewFact = styled.h5`
     font-size: 40px;
-    max-height: 30vh;
+    max-height: 20vh;
     color: #212e42;
+    overflow-x: hidden;
+    overflow-y: auto;
     `
 function RandomPage () {
     const [fact, setFact] = useState([])
@@ -44,8 +46,8 @@ function RandomPage () {
 
     return (
         <div className='component'>
-            <RandomHeader>Random Facts</RandomHeader>
-            <FactButton onClick={getFact}>Get Fact!</FactButton>
+            <RandomHeader>Learn Something New</RandomHeader>
+            <FactButton onClick={getFact}>Learn!</FactButton>
             <NewFact>{fact}</NewFact>
         </div>
     )
