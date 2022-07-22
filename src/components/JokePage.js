@@ -32,6 +32,7 @@ const Punchline = styled.h5`
     transition-delay: 100ms;
     overflow-x: hidden;
     overflow-y: auto;
+    text-shadow: 1px 1px 1px #89D6FF;
 `
 
 function JokePage () {

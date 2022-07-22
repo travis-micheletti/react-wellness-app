@@ -28,6 +28,7 @@ import styled from 'styled-components'
     color: #212e42;
     overflow-x: hidden;
     overflow-y: auto;
+    text-shadow: 1px 1px 1px #89D6FF;
     `
 function RandomPage () {
     const [fact, setFact] = useState([])

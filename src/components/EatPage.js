@@ -30,9 +30,11 @@ const RecipeText = styled.a`
     overflow-y: auto;
     @media only screen and (min-width: 768px) {
     font-size: 40px;
+    text-shadow: 1px 1px 1px #212e42;
     
     &:hover {
         color: #212e42;
+        text-shadow: 1px 1px 1px #89D6FF;
         transition-duration: 500ms;
         transition-delay: 100ms;
     }
@@ -55,6 +57,7 @@ const RecipeInput = styled.input`
     color: #212e42;
 `
 const RecipeInfo = styled.div`
+text-shadow: 1px 1px 1px #89D6FF;
     font-size: 22px;
     text-align-last: left;
     margin-right: 20vw;
