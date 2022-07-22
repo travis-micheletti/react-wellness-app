@@ -31,6 +31,7 @@ import styled from 'styled-components'
     `
 function RandomPage () {
     const [fact, setFact] = useState([])
+    const [source, setSource] = useState([])
 
     const getFact = () => {
         const getFact = {
@@ -38,9 +39,12 @@ function RandomPage () {
             redirect: 'follow'
           };
           
-          fetch("https://asli-fun-fact-api.herokuapp.com", getFact)
+          fetch("https://uselessfacts.jsph.pl//random.json?language=en", getFact)
             .then(res => res.json())
-            .then(data => setFact(data.data.fact))
+            .then(data => {
+                setFact(data.text)
+                setSource(data.source_url)
+            })
             .catch(error => console.log('error', error));
         }
 

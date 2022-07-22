@@ -43,7 +43,7 @@ function JokePage () {
             redirect: 'follow'
           };
           
-          fetch("https://v2.jokeapi.dev/joke/Dark?blacklistFlags=political,racist,sexist&type=single", getJoke)
+          fetch("https://v2.jokeapi.dev/joke/Any?blacklistFlags=racist,sexist,explicit&type=single", getJoke)
             .then(res => res.json())
             .then(data => setJoke(data.joke))
             .catch(error => console.log('error', error));
@@ -51,7 +51,7 @@ function JokePage () {
 
     return (
         <div className='component'>
-            <PageHeader>Need a laugh?</PageHeader>
+            <PageHeader>Need a Laugh?</PageHeader>
             <Button onClick={getJoke}>Laugh!</Button>
             <Punchline>{joke}</Punchline>
         </div>

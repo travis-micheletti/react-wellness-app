@@ -39,6 +39,12 @@
   - Git
   - Github
 
+  ## Credits/Thank You's
+  - Special thank you to the developers behind the APIs I used for this project:
+    - [EDAMAM](https://www.edamam.com/) : I used EDAMAM's Recipe Search API for the "Recipe Finder" component. They provide plenty of free API requests for individual developers and there's a huge database of different recipes and filters. Very excited to continue working with this API to expand this project.
+    - [JokeAPI](https://sv443.net/jokeapi/v2/) : I used JokeAPI's API for populating all of the jokes currently on the "Laugh" page. After doing a test-run with my mother I had to toggle off some of the jokes but otherwise it's been extremely simple to use. Thanks so much!
+    - [Random Useless Facts](https://uselessfacts.jsph.pl/) : I used this API for the Random Facts page. I was previously using a different one until I noticed some different formatting issues and this one appears to be cleaner. Thanks for the help!
+
 ## Getting Started/Install
 - To view:
 > [Deployed App - Click](https://react-wellness-app.netlify.app/)
