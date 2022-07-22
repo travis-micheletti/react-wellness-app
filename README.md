@@ -6,12 +6,15 @@
 ![image](https://user-images.githubusercontent.com/106038655/180060982-b0beba3c-2042-42db-bc1c-16bb88705f64.png)
 ![image](https://user-images.githubusercontent.com/106038655/180061001-4e33f5af-f5ae-4d80-80a0-081e8f84b802.png)
 
+
 ## Live App Pictures
-![](../../../Desktop/Screen%20Shot%202022-07-21%20at%205.34.23%20PM.png)
-![](../../../Desktop/Screen%20Shot%202022-07-21%20at%205.36.15%20PM.png)
-![](../../../Desktop/Screen%20Shot%202022-07-21%20at%205.34.47%20PM.png)
-![](../../../Desktop/Screen%20Shot%202022-07-21%20at%205.37.35%20PM.png)
-![](../../../Desktop/Screen%20Shot%202022-07-21%20at%205.37.44%20PM.png)
+![Screen Shot 2022-07-21 at 5 34 23 PM](https://user-images.githubusercontent.com/106038655/180338913-594b2031-f9e3-445f-b010-38e0e640858c.png)
+![Screen Shot 2022-07-21 at 5 34 47 PM](https://user-images.githubusercontent.com/106038655/180338932-adbee575-e83a-41d0-a784-58e81646393c.png)
+![Screen Shot 2022-07-21 at 5 36 15 PM](https://user-images.githubusercontent.com/106038655/180338954-7b91d4bf-a97b-47f1-8b47-e141dd3e5663.png)
+![Screen Shot 2022-07-21 at 5 37 35 PM](https://user-images.githubusercontent.com/106038655/180338973-dbc96cf2-cc6f-4a54-b094-5a123aa3b937.png)
+![Screen Shot 2022-07-21 at 5 37 44 PM](https://user-images.githubusercontent.com/106038655/180338980-7d2d5a75-4851-4169-8fbc-4095f9db2c95.png)
+
+
 ## What and Why?
   - I wanted to make an application that I would actually use for the foreseeable future. I wanted something that was geared towards things that were important to me or things I loved doing. I love laughing, learning, eating, and the Lofi Girl youtube channel!
   - I wanted to accomplish this while also showcasing what I've learned in class the last few weeks.
