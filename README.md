@@ -1,5 +1,5 @@
 # React Wellness App Documentation
-### [Deployed Website](https://react-wellness-app.netlify.app/)
+### [Deployed Website](https://respira-conmigo.netlify.app/)
 
 ## Initial Wireframes
 ![image](https://user-images.githubusercontent.com/106038655/180060933-f5029748-a701-4e37-89e6-a65949bac1a3.png)
