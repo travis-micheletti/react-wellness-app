@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const StudyHeader = styled.h1`
     color: #004C73;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Lobster', cursive;
     font-size: 50px;
     text-shadow: 3px 3px 3px #89D6FF;
     box-shadow: 1px 1px 14px #374955;
