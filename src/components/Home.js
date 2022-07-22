@@ -5,6 +5,7 @@ font-family: 'Lobster', cursive;
 margin-top: 5vh;
 font-size: 100px;
 color: #001B3C;
+text-shadow: 3px 3px 3px #89D6FF;
 `
 
 export const LogoPic = styled.img`

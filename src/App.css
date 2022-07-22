@@ -41,13 +41,14 @@ li {
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 0vh;
-  margin-left: -10vw;
+  margin-left: -7vw;
+  margin-right: -vw;
   column-gap: 1vw;
   padding-bottom: 1vh;
   padding-top: 1vh;
   /* border: 3px solid rgb(3, 224, 224); */
   background-color: #001B3C;
-  border-bottom: 2px solid #004C73;
+  border-bottom: 2px solid #89D6FF;
 }
 
 
