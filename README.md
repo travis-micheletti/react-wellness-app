@@ -7,11 +7,11 @@
 ![image](https://user-images.githubusercontent.com/106038655/180061001-4e33f5af-f5ae-4d80-80a0-081e8f84b802.png)
 
 ## Live App Pictures
-![image](../../../Desktop/Screen%20Shot%202022-07-21%20at%205.34.23%20PM.png)
-![image](../../../Desktop/Screen%20Shot%202022-07-21%20at%205.36.15%20PM.png)
-![image](../../../Desktop/Screen%20Shot%202022-07-21%20at%205.34.47%20PM.png)
-![image](../../../Desktop/Screen%20Shot%202022-07-21%20at%205.37.35%20PM.png)
-![image](../../../Desktop/Screen%20Shot%202022-07-21%20at%205.37.44%20PM.png)
+![](../../../Desktop/Screen%20Shot%202022-07-21%20at%205.34.23%20PM.png)
+![](../../../Desktop/Screen%20Shot%202022-07-21%20at%205.36.15%20PM.png)
+![](../../../Desktop/Screen%20Shot%202022-07-21%20at%205.34.47%20PM.png)
+![](../../../Desktop/Screen%20Shot%202022-07-21%20at%205.37.35%20PM.png)
+![](../../../Desktop/Screen%20Shot%202022-07-21%20at%205.37.44%20PM.png)
 ## What and Why?
   - I wanted to make an application that I would actually use for the foreseeable future. I wanted something that was geared towards things that were important to me or things I loved doing. I love laughing, learning, eating, and the Lofi Girl youtube channel!
   - I wanted to accomplish this while also showcasing what I've learned in class the last few weeks.
